@@ -1,0 +1,424 @@
+/* Estilos para el formulario de subida de archivos */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 60.5%;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #d9e4f5, #ebeef3);
+
+}
+
+body {
+  /* background-color:whitesmoke; */
+  margin: 0;
+  margin-top: 80px;
+  height: 100%;
+  padding: 0;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Quicksand',sans-serif;
+}
+.storage-info {
+  padding: 20px;
+  margin-top: 20px;
+  margin: 0 auto;
+  background-color: #f8f9fa; /* Un color de fondo suave */
+  border: 1px solid #dee2e6; /* Un borde sutil */
+  border-radius: 5px; /* Bordes redondeados para un aspecto moderno */
+  font-size: 16px; /* Un tamaño de fuente legible */
+  width: 50%;
+}
+
+.storage-info p {
+  margin: 0 0 10px; /* Espacio entre los párrafos */
+  color: #212529; /* Un color de texto oscuro para un buen contraste */
+}
+
+.storage-info strong {
+  color: #007bff; /* Un color de texto más brillante para los números */
+}
+
+header{
+  display: flex;
+  min-height: 70px;
+  /* background-color: white; */
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  margin-bottom: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+header, footer {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+}
+
+header a, footer a, nav a {
+  color: white;
+}
+
+.nav-link :hover{
+  color: #ffed00;
+  border-bottom: 2px solid #ffed00;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+
+.logo img{
+  height: auto;
+  width: 100px;
+  
+}
+
+a{
+  text-decoration: none;
+  color:black;
+  font-size: medium;
+  transition: color .3s ease;
+}
+
+nav a {
+  font-weight: 600;
+  color:black
+}
+
+nav {
+font-weight: 600;
+color:black;
+}
+/* 
+nav a:hover {
+color: red;
+border-bottom: 2px solid red;
+} */
+
+
+/* .nav-link:hover{
+color: red;
+} */
+
+main {
+  /* Agregar margen inferior para evitar que el contenido se solape con el pie de página */
+  margin-bottom: 50px; /* Ajusta este valor según la altura de tu pie de página */
+}
+
+.modal {
+  margin-top: 200px;
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFAFA, #E0E0E0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFAFA, #E0E0E0);
+  border-radius: 1em;
+  box-shadow: 0px 100px 48px -60px rgba(0,0,0,0.1);
+  color: black;
+  max-width: 330px;
+  /* overflow: hidden; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* top: 50%; */
+  left: 50%;
+  transition: background-color 0.3s, color 0.3s;
+  transform: translate(-46%, -15%);
+
+}
+
+.content > *, .modal > * {
+  padding: 0.875em;
+}
+
+.title {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  line-height: 1.2;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.upload-btn {
+  background-color: transparent;
+  border: 0.125rem dashed hsla(223,10%,50%,0.4);
+  flex: 1;
+  padding: 0.375rem 2rem;
+}
+
+.upload-btn:hover {
+  background-color: hsla(222, 49%, 26%, 0.2);
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 94, 54);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 4px;
+  background-color: rgba(66, 103, 134, 0.062);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 1em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.file-uploaded {
+  font-weight: 300;
+}
+
+
+.file-uploaded:hover::before {
+  background-color: rgba(233, 40, 6, 0.664);
+}
+  /* Estilos para la lista de archivos */
+
+  .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .descripcion p {
+    margin-bottom: 0;
+  }
+  
+  .descripcion a, .descripcion form {
+    margin-left: 10px;
+  }
+ .archivos-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+    /* justify-content: center; 
+    align-items: center; */
+    flex-direction: row;
+    padding-bottom: 2%;
+  } 
+  .archivo-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFAFA, #E0E0E0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFAFA, #E0E0E0);
+
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    height: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+
+  
+  /* .archivo-card a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: small;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .archivo-card a:hover {
+    background-color: #3e8e41;
+  } */
+  .archivo-card form {
+    display: inline-block;
+  }
+
+  .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex: 1; /* Añade esta línea */
+
+  }
+  .acciones {
+    display: flex;
+    align-items: center;
+    align-self: flex-start; /* Añade esta línea */
+    margin-top: 10px;
+  }
+  
+  .download-btn {
+    display: inline-flex; /* Cambia 'display: inline-block' a 'display: inline-flex' */
+    align-items: center;
+    /* background-color: #3e8e41; */
+    color: black;
+    text-decoration: none;
+    height: 26px;
+    padding: 5px 4px;
+    /* margin-right: 10px; */
+    margin-top: 20px;
+    border: none;
+  }
+  
+  .delete-btn {
+    display: inline-flex; /* Cambia 'display: inline-block' a 'display: inline-flex' */
+    /* background-color: #d32f2f; */
+    color: black;
+    height: 35px;
+    padding: 5px 4px;
+    /* margin-right: 5px; */
+    margin-top: 20px;
+    border: none;
+    background: none; /* Elimina el color de fondo predeterminado */
+
+  }
+  
+  .archivo-card button[type=submit]:hover {
+    cursor: pointer;
+  }
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal p {
+    margin-bottom: 20px;
+  }
+  
+  .modal-close {
+    background-color: #ccc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover {
+    background-color: #aaa;
+  }
+
+  footer{
+    /* background-color:white; */
+    text-align: center;
+    color:white;
+    padding:2px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+    
+  @media screen and (min-width: 768px) {
+    .archivos-list {
+      padding-bottom: 200px;
+    }
+  
+    .archivo-card {
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+
+    
+    .modal {
+      margin-top: 200px;
+    }
+  
+    .archivo-card {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+
+  
+   
+  }
+  
+  @media screen and (max-width: 480px) {
+    .modal {
+      margin-top: 250px;
+    }
+  
+    .archivo-card {
+      max-width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .download-btn {
+      padding: 2px 3px;
+      margin-right: 2px;
+      margin-top: 5px;
+    }
+  
+    .delete-btn {
+      height: 32px; /* Modificar la altura del botón para que se vea entero */
+      padding: 5px 5px; /* Aumentar el relleno para que el texto no se recorte */
+      margin-right: 2px;
+      margin-top: 5px;
+    }
+  }
+
+  
