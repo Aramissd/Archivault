@@ -1,0 +1,91 @@
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller}{}\doxysection{Usuario\+Crud\+Controller Class Reference}
+\label{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller}\index{UsuarioCrudController@{UsuarioCrudController}}
+Inheritance diagram for Usuario\+Crud\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a1d04139db3a5ad5713ecbd14d97da879}{setup}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_ae7a7b22c151771e92c397a7acfea58e5}{setup\+List\+Operation}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a9caabc852f4dfa85de531da011c8dc36}{setup\+Create\+Operation}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a759bfb82ed5acfdbc78c68e330760ad1}{setup\+Update\+Operation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a1d04139db3a5ad5713ecbd14d97da879}\label{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a1d04139db3a5ad5713ecbd14d97da879}} 
+\index{UsuarioCrudController@{UsuarioCrudController}!setup@{setup}}
+\index{setup@{setup}!UsuarioCrudController@{UsuarioCrudController}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Configure the Crud\+Panel object. Apply settings to all operations.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a9caabc852f4dfa85de531da011c8dc36}\label{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a9caabc852f4dfa85de531da011c8dc36}} 
+\index{UsuarioCrudController@{UsuarioCrudController}!setupCreateOperation@{setupCreateOperation}}
+\index{setupCreateOperation@{setupCreateOperation}!UsuarioCrudController@{UsuarioCrudController}}
+\doxysubsubsection{\texorpdfstring{setupCreateOperation()}{setupCreateOperation()}}
+{\footnotesize\ttfamily setup\+Create\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define what happens when the Create operation is loaded.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://backpackforlaravel.com/docs/crud-operation-create}{\texttt{ https\+://backpackforlaravel.\+com/docs/crud-\/operation-\/create}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Fields can be defined using the fluent syntax or array syntax\+:
+\begin{DoxyItemize}
+\item CRUD\+::field(\textquotesingle{}price\textquotesingle{})-\/\texorpdfstring{$>$}{>}type(\textquotesingle{}number\textquotesingle{});
+\item CRUD\+::add\+Field(\mbox{[}\textquotesingle{}name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}price\textquotesingle{}, \textquotesingle{}type\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}number\textquotesingle{}\mbox{]}));
+\end{DoxyItemize}\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_ae7a7b22c151771e92c397a7acfea58e5}\label{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_ae7a7b22c151771e92c397a7acfea58e5}} 
+\index{UsuarioCrudController@{UsuarioCrudController}!setupListOperation@{setupListOperation}}
+\index{setupListOperation@{setupListOperation}!UsuarioCrudController@{UsuarioCrudController}}
+\doxysubsubsection{\texorpdfstring{setupListOperation()}{setupListOperation()}}
+{\footnotesize\ttfamily setup\+List\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define what happens when the List operation is loaded.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://backpackforlaravel.com/docs/crud-operation-list-entries}{\texttt{ https\+://backpackforlaravel.\+com/docs/crud-\/operation-\/list-\/entries}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Columns can be defined using the fluent syntax or array syntax\+:
+\begin{DoxyItemize}
+\item CRUD\+::column(\textquotesingle{}price\textquotesingle{})-\/\texorpdfstring{$>$}{>}type(\textquotesingle{}number\textquotesingle{});
+\item CRUD\+::add\+Column(\mbox{[}\textquotesingle{}name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}price\textquotesingle{}, \textquotesingle{}type\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}number\textquotesingle{}\mbox{]});
+\end{DoxyItemize}\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a759bfb82ed5acfdbc78c68e330760ad1}\label{class_app_1_1_http_1_1_controllers_1_1_admin_1_1_usuario_crud_controller_a759bfb82ed5acfdbc78c68e330760ad1}} 
+\index{UsuarioCrudController@{UsuarioCrudController}!setupUpdateOperation@{setupUpdateOperation}}
+\index{setupUpdateOperation@{setupUpdateOperation}!UsuarioCrudController@{UsuarioCrudController}}
+\doxysubsubsection{\texorpdfstring{setupUpdateOperation()}{setupUpdateOperation()}}
+{\footnotesize\ttfamily setup\+Update\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define what happens when the Update operation is loaded.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://backpackforlaravel.com/docs/crud-operation-update}{\texttt{ https\+://backpackforlaravel.\+com/docs/crud-\/operation-\/update}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aramis/\+Desktop/archivault\+\_\+github/app/\+Http/\+Controllers/\+Admin/Usuario\+Crud\+Controller.\+php\end{DoxyCompactItemize}

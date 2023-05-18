@@ -1,0 +1,107 @@
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller}{}\doxysection{Archivo\+Controller Class Reference}
+\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller}\index{ArchivoController@{ArchivoController}}
+Inheritance diagram for Archivo\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_http_1_1_controllers_1_1_archivo_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ae8ec06fbeafac46603b5740254ddf279}{adaptive\+File\+Size}} (\$size\+In\+Bytes)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ab2e21acc6e9e90c216d8f74a999a0796}{get\+Total\+Storage\+Used\+By\+User}} (\$user\+Id)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a726fa8a4b4b187b9ca32ba427aac8137}{destroy}} (\$id)
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a2b8e3779f5bd8c38f70307574859bd36}{show}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a9ef485163104597c12185b53cdacf638}{store}} (Request \$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador para la gestión de archivos. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ae8ec06fbeafac46603b5740254ddf279}\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ae8ec06fbeafac46603b5740254ddf279}} 
+\index{ArchivoController@{ArchivoController}!adaptiveFileSize@{adaptiveFileSize}}
+\index{adaptiveFileSize@{adaptiveFileSize}!ArchivoController@{ArchivoController}}
+\doxysubsubsection{\texorpdfstring{adaptiveFileSize()}{adaptiveFileSize()}}
+{\footnotesize\ttfamily adaptive\+File\+Size (\begin{DoxyParamCaption}\item[{}]{\$size\+In\+Bytes }\end{DoxyParamCaption})}
+
+Función para convertir el tamaño del archivo a una unidad de medida legible.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size\+In\+Bytes} & Tamaño del archivo en bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Tamaño del archivo convertido a la unidad apropiada (Bytes, KB, MB, GB). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a726fa8a4b4b187b9ca32ba427aac8137}\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a726fa8a4b4b187b9ca32ba427aac8137}} 
+\index{ArchivoController@{ArchivoController}!destroy@{destroy}}
+\index{destroy@{destroy}!ArchivoController@{ArchivoController}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily destroy (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Método para eliminar un archivo.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & ID del archivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response Respuesta HTTP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ab2e21acc6e9e90c216d8f74a999a0796}\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_ab2e21acc6e9e90c216d8f74a999a0796}} 
+\index{ArchivoController@{ArchivoController}!getTotalStorageUsedByUser@{getTotalStorageUsedByUser}}
+\index{getTotalStorageUsedByUser@{getTotalStorageUsedByUser}!ArchivoController@{ArchivoController}}
+\doxysubsubsection{\texorpdfstring{getTotalStorageUsedByUser()}{getTotalStorageUsedByUser()}}
+{\footnotesize\ttfamily get\+Total\+Storage\+Used\+By\+User (\begin{DoxyParamCaption}\item[{}]{\$user\+Id }\end{DoxyParamCaption})}
+
+Función para calcular el total de almacenamiento utilizado por un usuario.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$user\+Id} & ID del usuario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Total de almacenamiento utilizado por el usuario en bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a2b8e3779f5bd8c38f70307574859bd36}\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a2b8e3779f5bd8c38f70307574859bd36}} 
+\index{ArchivoController@{ArchivoController}!show@{show}}
+\index{show@{show}!ArchivoController@{ArchivoController}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método para mostrar los archivos del usuario autenticado.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response Respuesta HTTP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a9ef485163104597c12185b53cdacf638}\label{class_app_1_1_http_1_1_controllers_1_1_archivo_controller_a9ef485163104597c12185b53cdacf638}} 
+\index{ArchivoController@{ArchivoController}!store@{store}}
+\index{store@{store}!ArchivoController@{ArchivoController}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily store (\begin{DoxyParamCaption}\item[{Request}]{\$request }\end{DoxyParamCaption})}
+
+Método para almacenar un archivo subido por el usuario autenticado.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & Request HTTP con el archivo subido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Json\+Response Respuesta HTTP en formato JSON. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aramis/\+Desktop/archivault\+\_\+github/app/\+Http/\+Controllers/Archivo\+Controller.\+php\end{DoxyCompactItemize}

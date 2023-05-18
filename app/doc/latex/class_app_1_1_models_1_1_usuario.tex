@@ -1,0 +1,97 @@
+\hypertarget{class_app_1_1_models_1_1_usuario}{}\doxysection{Usuario Class Reference}
+\label{class_app_1_1_models_1_1_usuario}\index{Usuario@{Usuario}}
+Inheritance diagram for Usuario\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.806452cm]{class_app_1_1_models_1_1_usuario}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_ae7848376f8338d22d95881223a1e2763}{get\+Auth\+Identifier}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_ad43a281bd337afd4bce1bc3431dd9fe3}{get\+Auth\+Password}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a906511b30304ef00d76cd40a6f378f72}{archivos}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a51267c24c8fae742ed8f9be0ba6085ee}\label{class_app_1_1_models_1_1_usuario_a51267c24c8fae742ed8f9be0ba6085ee}} 
+{\bfseries \$timestamps} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_ae8876a14058f368335baccf35af4a22b}\label{class_app_1_1_models_1_1_usuario_ae8876a14058f368335baccf35af4a22b}} 
+{\bfseries \$table} = \textquotesingle{}usuarios\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a6a90e74ccdf5efd70d51d10c906f8e32}{\$fillable}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Modelo Usuario
+
+Representa la tabla de usuarios en la base de datos. Proporciona funcionalidad para la autenticación y autorización de usuarios. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a906511b30304ef00d76cd40a6f378f72}\label{class_app_1_1_models_1_1_usuario_a906511b30304ef00d76cd40a6f378f72}} 
+\index{Usuario@{Usuario}!archivos@{archivos}}
+\index{archivos@{archivos}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{archivos()}{archivos()}}
+{\footnotesize\ttfamily archivos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Relación con el modelo Archivo. Un usuario puede tener muchos archivos asociados.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Has\+Many 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_ae7848376f8338d22d95881223a1e2763}\label{class_app_1_1_models_1_1_usuario_ae7848376f8338d22d95881223a1e2763}} 
+\index{Usuario@{Usuario}!getAuthIdentifier@{getAuthIdentifier}}
+\index{getAuthIdentifier@{getAuthIdentifier}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{getAuthIdentifier()}{getAuthIdentifier()}}
+{\footnotesize\ttfamily get\+Auth\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el identificador de autenticación del usuario.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_ad43a281bd337afd4bce1bc3431dd9fe3}\label{class_app_1_1_models_1_1_usuario_ad43a281bd337afd4bce1bc3431dd9fe3}} 
+\index{Usuario@{Usuario}!getAuthPassword@{getAuthPassword}}
+\index{getAuthPassword@{getAuthPassword}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{getAuthPassword()}{getAuthPassword()}}
+{\footnotesize\ttfamily get\+Auth\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la contraseña de autenticación del usuario.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a6a90e74ccdf5efd70d51d10c906f8e32}\label{class_app_1_1_models_1_1_usuario_a6a90e74ccdf5efd70d51d10c906f8e32}} 
+\index{Usuario@{Usuario}!\$fillable@{\$fillable}}
+\index{\$fillable@{\$fillable}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{\$fillable}{$fillable}}
+{\footnotesize\ttfamily \$fillable\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nombre'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'apellidos'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'email'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'rol'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'password'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/aramis/\+Desktop/archivault\+\_\+github/app/\+Models/Usuario.\+php\end{DoxyCompactItemize}
